@@ -49,7 +49,7 @@ export class AuthService {
           }, expiresInDuration * 1000);
           this.isAuthenticated = true;
           this.authStatusListener.next(true);
-          this.router.navigate(['/']);
+          this.router.navigate(['/list']);
         }
       });
   }
